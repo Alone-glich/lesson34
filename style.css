@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgba(255, 166, 0, 0.615);
+}
+.align {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  perspective-origin: 1000px;
+}
+.ota {
+  width: 600px;
+  height: 800px;
+  background-color: #000;
+  display: flex;
+  perspective: 1000px;
+  background-image: url(./masha\ bacha.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid black;
+}
+.eshik1 {
+  width: 50%;
+  height: 800px;
+  background-color: rgba(0, 255, 225, 0.455);
+  border: 1px solid #000;
+  transition: 0.5s ease;
+  transform-origin: top right;
+}
+.ushlagich1 {
+  width: 20px;
+  height: 85px;
+  margin: 20px;
+  position: absolute;
+  top: 320px;
+  background-color: rgb(82, 83, 84);
+}
+.ushlagich2 {
+  width: 20px;
+  height: 85px;
+  margin: 10px;
+  position: absolute;
+  left: 240px;
+  top: 330px;
+  background-color: rgb(82, 83, 84);
+}
+.ota:hover .eshik1 {
+  transform: rotateY(100deg);
+}
+.eshik2 {
+  width: 50%;
+  height: 800px;
+  background-color: rgba(0, 255, 225, 0.455);
+  border: 1px solid #000;
+  transition: 0.5s ease;
+  transform-origin: top left;
+}
+
+.ota:hover .eshik2 {
+  transform: rotateY(-100deg);
+}
